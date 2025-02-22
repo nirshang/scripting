@@ -9,4 +9,5 @@ echo "Files to delete: $Files_to_delete"
 while read -r file
 do 
    echo "deleting file: $file"
+   rm -rf $file
 done <<< $Files_to_delete
